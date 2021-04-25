@@ -48,9 +48,20 @@ for i in range(0,count):
 	Courses += [ B ]
 
 
-
-
 print("All Students:")
 Students_List(Students)
 print("All Courses:")
 Courses_List(Courses)
+
+def mark():
+	mark = input(" Mark: ")
+	return mark
+# main
+Marks = []
+for i in range(0, CountCourse()):
+	for j in range(0, CountStudents()):
+		m = mark()
+		Marks +=[m]
+
+for a in Marks:
+	print(a)
